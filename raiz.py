@@ -30,3 +30,10 @@ while True:
     else:
         print("Gracias")
 
+
+    inp = '1'
+    match inp:
+        case '1':
+            print("Elejiste La Opcion 1")
+        case '2':
+            print("Elejiste La Opcion ")
