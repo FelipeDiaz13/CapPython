@@ -16,13 +16,22 @@ while True:
 
     opciones_menu = input(" Introduce una opción ")
 
+
     if int(opciones_menu) == 1:
         print("Agregar Usuarios")
         in_usuario =input("Intoduce El Nombre")
         list_Usuarios.append(objeto_usuario.mostrar_nombre(in_nombre = in_usuario))
         print(list_Usuarios)
+
+
     elif int(opciones_menu) == 2:
         print("Eliminar Usuarios")
+        print(list_Usuarios)
+        try:
+            nombre = input('A Quien Eliminas?')
+            list_Usuarios.remove(nombre)
+        except Exception as Usuario_no_encontrado:
+            print("Este usuario no se encontro")
 
     elif int(opciones_menu) == 3:
         print("Actualizar Usuarios")
@@ -31,9 +40,10 @@ while True:
         print("Gracias")
 
 
-    inp = '1'
+"""  inp = '1'
     match inp:
         case '1':
             print("Elejiste La Opcion 1")
         case '2':
-            print("Elejiste La Opcion ")
+            print("Elejiste La Opcion ")"""
+
